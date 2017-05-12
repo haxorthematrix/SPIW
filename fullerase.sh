@@ -1,7 +1,6 @@
 #!/bin/bash
 function send() {
-    #screen -X stuff "$@" ; sleep 2
-    echo "$@"
+    screen -X stuff "$@" ; sleep 2
 }
 
 while read ln; do send "$ln"; done << EOF
